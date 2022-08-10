@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: hlt-bmr-calc-service
+  zipkin:
+    base-url: http://zipkin:9411
+
+server:
+  port: 8084
+
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    service-url:
+      defaultZone: http://hlt-discovery-service:8761/eureka
+
+springdoc:
+  swagger-ui:
+    operationsSorter: method
